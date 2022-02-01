@@ -1,0 +1,8 @@
+select 
+	product.Name as  [Product name], 
+	category.Name as [Category]
+from Products as product
+	left join Categories as category on product.CategoryID = category.ID
+order by product.Name;
+
+/*Если потребуется визуализация таблиц, могу нарисовать на скорую руку*/
